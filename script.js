@@ -1,3 +1,4 @@
+let row = 0;
 document.getElementById("submit").addEventListener("click", () => {
     const fullName = document.getElementById("full-name").value;
     const roll = document.getElementById("roll").value;
@@ -15,7 +16,6 @@ document.getElementById("submit").addEventListener("click", () => {
 });
 
 function displayData(name, roll, grade) {
-    let row = 0;
     const display = document.getElementById("display");
     const newRow = display.insertRow(row);
     const cell0 = newRow.insertCell(0);
