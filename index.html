@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Table Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container p-5">
+        <section class="px-5">
+            <div class="row form-group">
+                <div class="col-2">
+                    <label class="col-form-label" for="">Full name</label>
+                </div>
+                <div class="col-10">
+                    <input id="full-name" class="form-control" type="text" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-2">
+                    <label class="col-form-label" for="">Roll Number</label>
+                </div>
+                <div class="col-10">
+                    <input id="roll" class="form-control" type="number" name=""  placeholder="000000">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-2">
+                    <label class="col-form-label" for="">Grade</label>
+                </div>
+                <div class="col-10">
+                    <input id="grade" class="form-control" type="text" placeholder="A+">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <button id="submit" class="btn btn-success" type="submit">Submit</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5">
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Roll Number</th>
+                    <th scope="col">Grade</th>
+                  </tr>
+                </thead>
+                <tbody id="display">
+                    <!-- Insert Data By JavaScript -->
+                </tbody>
+              </table>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
